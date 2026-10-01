@@ -1,0 +1,22 @@
+# IndicF5 local voice test — direct dependencies.
+# Pins come from the Phase 1 source review (see README.md "Why these pins").
+# Install with:  uv pip install --python .venv/bin/python -r requirements.txt
+# Exact resolved versions of everything are in requirements.lock.txt.
+
+# torchaudio >= 2.9 routes torchaudio.load() through TorchCodec, which needs FFmpeg.
+torch==2.8.0
+torchaudio==2.8.0
+
+# transformers >= 4.50 breaks IndicF5's custom model loading (meta-tensor init).
+# Upstream requirements.txt pins <4.50 but setup.py does not, so pin explicitly.
+transformers==4.49.0
+huggingface-hub<1.0
+
+# Upstream constraint.
+numpy<=1.26.4
+
+# Official IndicF5 package (installs as `f5_tts`), pinned to the reviewed commit.
+f5_tts @ git+https://github.com/ai4bharat/IndicF5.git@13f7c4d627cc10111aea8fe9c0039462cacacdc7
+
+# Optional local UI (scripts/app.py). Additive only: installs no changes to the pins above.
+streamlit==1.64.0

@@ -1,0 +1,9 @@
+# Local-only Streamlit settings (read when launched from the project root).
+[server]
+address = "localhost"
+port = 8501
+maxUploadSize = 50
+
+[browser]
+serverAddress = "localhost"
+gatherUsageStats = false

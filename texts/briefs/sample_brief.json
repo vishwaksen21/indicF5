@@ -1,0 +1,26 @@
+{
+  "_note": "Sample brief for testing the Phase 3 planner on the Phase 1/2 test job.",
+  "title": "IndicF5 pipeline test clip",
+  "objective": "Short test clip: narrator greeting followed by a brand welcome card.",
+  "target_duration_s": 8.0,
+  "aspect_ratio": "16:9",
+  "audience": "internal pipeline test",
+  "visual_style": "clean, bright, modern corporate; natural light; uncluttered backgrounds",
+  "brand_profile": "prudential_brand_profile.json",
+  "presenter": {
+    "available": true,
+    "description": "the narrator (owner of the reference voice), seated, facing camera",
+    "consent_confirmed": null,
+    "max_on_camera_ratio": 0.6
+  },
+  "planning": {"min_scene_s": 1.5, "max_scene_s": 8.0, "dissolve_min_pause_s": 0.6},
+  "keyword_visuals": [
+    {"keywords": ["technology", "data", "innovation", "intelligent", "digital"],
+     "visual_mode": "voiceover_broll",
+     "visual_description": "people using modern healthcare technology: tablets, dashboards, connected devices"},
+    {"keywords": ["care", "health", "healthier", "people"],
+     "visual_mode": "environmental_visual",
+     "visual_description": "warm everyday moments of people and families living healthy lives"}
+  ],
+  "scene_overrides": []
+}

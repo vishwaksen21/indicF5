@@ -1,0 +1,156 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "check": "chunks reproduce approved English script exactly",
+      "ok": true
+    },
+    {
+      "check": "every chunk has a 1:1 word mapping",
+      "ok": true
+    },
+    {
+      "check": "no unknown tokens",
+      "ok": true
+    },
+    {
+      "check": "every chunk ends with । or !",
+      "ok": true
+    },
+    {
+      "check": "no plain फ (aspirated p) where f is intended",
+      "ok": true
+    },
+    {
+      "check": "brand spelled identically wherever it occurs",
+      "ok": true
+    },
+    {
+      "check": "every article 'a' maps to ए",
+      "ok": true
+    },
+    {
+      "check": "no lone अ word left",
+      "ok": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 1,
+      "english": "Welcome to Prudential Health India!",
+      "devanagari": "वेलकम टू प्रूडेंशियल हेल्थ इंडिया!",
+      "english_words": 5,
+      "devanagari_words": 5,
+      "word_count_match": true,
+      "tokens": 34,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.45
+    },
+    {
+      "id": 2,
+      "english": "At Prudential, we believe that better health begins with better possibilities.",
+      "devanagari": "ऐट प्रूडेंशियल, वी बिलीव दैट बेटर हेल्थ बिगिन्स विद बेटर पॉसिबिलिटीज़।",
+      "english_words": 11,
+      "devanagari_words": 11,
+      "word_count_match": true,
+      "tokens": 70,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.45
+    },
+    {
+      "id": 3,
+      "english": "Through innovation, technology, and a commitment to care, we are transforming the way people experience healthcare.",
+      "devanagari": "थ्रू इनोवेशन, टेक्नोलॉजी, एंड ए कमिटमेंट टू केयर, वी आर ट्रांसफ़ॉर्मिंग द वे पीपल एक्सपीरियंस हेल्थकेयर।",
+      "english_words": 16,
+      "devanagari_words": 16,
+      "word_count_match": true,
+      "tokens": 104,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.45
+    },
+    {
+      "id": 4,
+      "english": "Our vision is simple:",
+      "devanagari": "आवर विज़न इज़ सिम्पल।",
+      "english_words": 4,
+      "devanagari_words": 4,
+      "word_count_match": true,
+      "tokens": 21,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.3
+    },
+    {
+      "id": 5,
+      "english": "to make healthcare more accessible, seamless, and personalized for everyone.",
+      "devanagari": "टू मेक हेल्थकेयर मोर ऐक्सेसिबल, सीमलेस, एंड पर्सनलाइज़्ड फ़ॉर एवरीवन।",
+      "english_words": 10,
+      "devanagari_words": 10,
+      "word_count_match": true,
+      "tokens": 69,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.45
+    },
+    {
+      "id": 6,
+      "english": "By bringing together people, data, and intelligent solutions, we are creating meaningful experiences that put people at the heart of everything we do.",
+      "devanagari": "बाय ब्रिंगिंग टुगेदर पीपल, डेटा, एंड इंटेलिजेंट सॉल्यूशंस, वी आर क्रिएटिंग मीनिंगफ़ुल एक्सपीरियंसेज़ दैट पुट पीपल ऐट द हार्ट ऑफ़ एवरीथिंग वी डू।",
+      "english_words": 23,
+      "devanagari_words": 23,
+      "word_count_match": true,
+      "tokens": 144,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.45
+    },
+    {
+      "id": 7,
+      "english": "Together, we are building a healthier tomorrow.",
+      "devanagari": "टुगेदर, वी आर बिल्डिंग ए हेल्दियर टुमॉरो।",
+      "english_words": 7,
+      "devanagari_words": 7,
+      "word_count_match": true,
+      "tokens": 41,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.7
+    },
+    {
+      "id": 8,
+      "english": "Prudential Health India.",
+      "devanagari": "प्रूडेंशियल हेल्थ इंडिया।",
+      "english_words": 3,
+      "devanagari_words": 3,
+      "word_count_match": true,
+      "tokens": 25,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.35
+    },
+    {
+      "id": 9,
+      "english": "Moving health forward.",
+      "devanagari": "मूविंग हेल्थ फ़ॉरवर्ड।",
+      "english_words": 3,
+      "devanagari_words": 3,
+      "word_count_match": true,
+      "tokens": 22,
+      "unknown_tokens": [],
+      "ends_with_sentence_punct": true,
+      "plain_pha_words": [],
+      "pause_after_s": 0.0
+    }
+  ]
+}

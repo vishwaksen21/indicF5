@@ -1,0 +1,31 @@
+{
+  "name": "prudential_40sec_v2",
+  "approved_english_script": "Welcome to Prudential Health India!\n\nAt Prudential, we believe that better health begins with better possibilities.\n\nThrough innovation, technology, and a commitment to care, we are transforming the way people experience healthcare.\n\nOur vision is simple: to make healthcare more accessible, seamless, and personalized for everyone.\n\nBy bringing together people, data, and intelligent solutions, we are creating meaningful experiences that put people at the heart of everything we do.\n\nTogether, we are building a healthier tomorrow.\n\nPrudential Health India. Moving health forward.",
+  "notes": [
+    "Each chunk's 'english' is an exact substring of the approved script; joined with single spaces they must reproduce it exactly (checked in preflight).",
+    "Chunks 4+5 are one sentence split at the colon; chunk 4 ends with the Devanagari danda so the model closes 'simple' cleanly instead of attaching a vowel release to the next word (v1 audit: heard as 'simpler').",
+    "Pauses are silence targets between the end of one chunk's speech and the start of the next, including the trim margins."
+  ],
+  "lead_in_s": 0.12,
+  "tail_s": 0.30,
+  "chunks": [
+    {"id": 1, "english": "Welcome to Prudential Health India!",
+     "devanagari": "वेलकम टू प्रूडेंशियल हेल्थ इंडिया!", "pause_after_s": 0.45},
+    {"id": 2, "english": "At Prudential, we believe that better health begins with better possibilities.",
+     "devanagari": "ऐट प्रूडेंशियल, वी बिलीव दैट बेटर हेल्थ बिगिन्स विद बेटर पॉसिबिलिटीज़।", "pause_after_s": 0.45},
+    {"id": 3, "english": "Through innovation, technology, and a commitment to care, we are transforming the way people experience healthcare.",
+     "devanagari": "थ्रू इनोवेशन, टेक्नोलॉजी, एंड ए कमिटमेंट टू केयर, वी आर ट्रांसफ़ॉर्मिंग द वे पीपल एक्सपीरियंस हेल्थकेयर।", "pause_after_s": 0.45},
+    {"id": 4, "english": "Our vision is simple:",
+     "devanagari": "आवर विज़न इज़ सिम्पल।", "pause_after_s": 0.30},
+    {"id": 5, "english": "to make healthcare more accessible, seamless, and personalized for everyone.",
+     "devanagari": "टू मेक हेल्थकेयर मोर ऐक्सेसिबल, सीमलेस, एंड पर्सनलाइज़्ड फ़ॉर एवरीवन।", "pause_after_s": 0.45},
+    {"id": 6, "english": "By bringing together people, data, and intelligent solutions, we are creating meaningful experiences that put people at the heart of everything we do.",
+     "devanagari": "बाय ब्रिंगिंग टुगेदर पीपल, डेटा, एंड इंटेलिजेंट सॉल्यूशंस, वी आर क्रिएटिंग मीनिंगफ़ुल एक्सपीरियंसेज़ दैट पुट पीपल ऐट द हार्ट ऑफ़ एवरीथिंग वी डू।", "pause_after_s": 0.45},
+    {"id": 7, "english": "Together, we are building a healthier tomorrow.",
+     "devanagari": "टुगेदर, वी आर बिल्डिंग ए हेल्दियर टुमॉरो।", "pause_after_s": 0.70},
+    {"id": 8, "english": "Prudential Health India.",
+     "devanagari": "प्रूडेंशियल हेल्थ इंडिया।", "pause_after_s": 0.35},
+    {"id": 9, "english": "Moving health forward.",
+     "devanagari": "मूविंग हेल्थ फ़ॉरवर्ड।", "pause_after_s": 0.0}
+  ]
+}

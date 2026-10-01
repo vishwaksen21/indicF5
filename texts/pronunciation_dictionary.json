@@ -1,0 +1,31 @@
+{
+  "_about": "English word -> Devanagari respelling used for IndicF5 (which cannot pronounce Latin-script English). Nukta letters use letter + U+093C (NFC form), the same form already validated in earlier runs. f is always फ़ (never plain फ = aspirated p); z is always ज़.",
+  "entries": {
+    "a (article)":   {"devanagari": "ए",        "why": "v1 used अ (a lone schwa vowel, rare as a Hindi word) and the article was dropped twice. ए gives the full /eɪ/ form of 'a', which is standard English and much harder to swallow."},
+    "Prudential":    {"devanagari": "प्रूडेंशियल", "why": "Unchanged from v1/welcome tests, where Whisper recognised it every time (pru-DEN-shee-al, Indian-English pronunciation)."},
+    "Health":        {"devanagari": "हेल्थ",     "why": "Unchanged; recognised correctly in all runs."},
+    "India":         {"devanagari": "इंडिया",    "why": "Unchanged; audit scoring favoured 'India' over 'in India'."},
+    "healthcare":    {"devanagari": "हेल्थकेयर",  "why": "One word, as in the script."},
+    "healthier":     {"devanagari": "हेल्दियर",   "why": "द for English voiced 'th' (ð), the standard Devanagari choice."},
+    "simple":        {"devanagari": "सिम्पल",    "why": "Explicit म्प cluster (sim-pl) instead of the nasal sign in सिंपल; plus chunk-final danda to stop the 'simpler' release heard in v1."},
+    "innovation":    {"devanagari": "इनोवेशन",   "why": "Unchanged; recognised correctly."},
+    "technology":    {"devanagari": "टेक्नोलॉजी", "why": "ॉ (candra o) for the English open 'o' in -nol-."},
+    "commitment":    {"devanagari": "कमिटमेंट",  "why": "Unchanged; recognised correctly."},
+    "transforming":  {"devanagari": "ट्रांसफ़ॉर्मिंग", "why": "फ़ added for consistent f (v1 had plain फ)."},
+    "accessible":    {"devanagari": "ऐक्सेसिबल",  "why": "ऐ for the English /æ/ in ac-."},
+    "seamless":      {"devanagari": "सीमलेस",    "why": "Unchanged; recognised correctly."},
+    "personalized":  {"devanagari": "पर्सनलाइज़्ड", "why": "ज़ for z; final ्ड keeps the -zd ending."},
+    "for":           {"devanagari": "फ़ॉर",       "why": "फ़ for consistent f."},
+    "intelligent":   {"devanagari": "इंटेलिजेंट",  "why": "Unchanged; recognised correctly."},
+    "solutions":     {"devanagari": "सॉल्यूशंस",  "why": "Unchanged; recognised correctly."},
+    "meaningful":    {"devanagari": "मीनिंगफ़ुल",  "why": "फ़ for consistent f."},
+    "experiences":   {"devanagari": "एक्सपीरियंसेज़", "why": "ज़ for the plural -ez."},
+    "of":            {"devanagari": "ऑफ़",       "why": "फ़ for consistent f (v1 had plain फ)."},
+    "tomorrow":      {"devanagari": "टुमॉरो",    "why": "Unchanged; recognised correctly."},
+    "forward":       {"devanagari": "फ़ॉरवर्ड",   "why": "फ़ for consistent f."},
+    "Moving":        {"devanagari": "मूविंग",    "why": "Unchanged; recognised correctly."},
+    "possibilities": {"devanagari": "पॉसिबिलिटीज़", "why": "ज़ for the plural -ies (z)."},
+    "the":           {"devanagari": "द",        "why": "Dental द for ð, standard."},
+    "through":       {"devanagari": "थ्रू",      "why": "थ is the closest supported sound to English θ."}
+  }
+}
