@@ -4,14 +4,7 @@ __pycache__/
 .DS_Store
 .env
 
-# Personal voice data and generated audio stay local and out of version control.
-reference/*
-!reference/.gitkeep
-outputs/*
-!outputs/.gitkeep
+# Inference lock marker.
+outputs/.inference.lock
 # Per-run reports contain your transcript and generated text.
 reports/runs/
-# Source recordings kept in the project root.
-/*.wav
-/*.mp4
-/*.m4a

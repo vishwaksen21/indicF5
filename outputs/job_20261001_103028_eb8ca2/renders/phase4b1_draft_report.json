@@ -1,0 +1,432 @@
+{
+  "job_id": "job_20261001_103028_eb8ca2",
+  "created_at": "2026-10-01T11:23:16+05:30",
+  "renderer": "assemble_video.py (Phase 4B-1, draft, placeholders only)",
+  "mode": "draft",
+  "output": "/Users/cvishwaksena/Desktop/indicf5-voice-test/outputs/job_20261001_103028_eb8ca2/renders/phase4b1_draft.mp4",
+  "review_sheet": "/Users/cvishwaksena/Desktop/indicf5-voice-test/outputs/job_20261001_103028_eb8ca2/renders/phase4b1_draft_review.png",
+  "ffmpeg": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "inputs": {
+    "audio": "/Users/cvishwaksena/Desktop/indicf5-voice-test/outputs/job_20261001_103028_eb8ca2/speech.wav",
+    "scene_plan_validation": "valid_with_missing_inputs",
+    "scene_plan_source": "re-validated in memory (plan predates Phase 3.1)",
+    "asset_manifest": "assets/asset_manifest.json",
+    "subtitles": "subtitles/captions_highlight.ass (parsed; rasterised with Pillow, no libass)"
+  },
+  "format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 25,
+    "video_codec": "h264 (libx264, crf 16, yuv420p, bt709)",
+    "audio_codec": "aac (128 kb/s, 24 kHz mono)"
+  },
+  "timeline": {
+    "frames": 169,
+    "cut_frames": [
+      100
+    ],
+    "dissolves": [
+      {
+        "boundary_s": 3.99,
+        "duration_s": 0.35
+      }
+    ],
+    "fade_in_s": [
+      0.0,
+      0.25
+    ],
+    "fade_out_s": [
+      6.45,
+      6.7599583333333335
+    ]
+  },
+  "subtitle_events": [
+    {
+      "index": 0,
+      "start_s": 0.15,
+      "end_s": 0.79,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "Hello,",
+        ""
+      ]
+    },
+    {
+      "index": 1,
+      "start_s": 0.79,
+      "end_s": 1.08,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "this",
+        ""
+      ]
+    },
+    {
+      "index": 2,
+      "start_s": 1.08,
+      "end_s": 1.22,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "is",
+        ""
+      ]
+    },
+    {
+      "index": 3,
+      "start_s": 1.22,
+      "end_s": 1.44,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "my",
+        ""
+      ]
+    },
+    {
+      "index": 4,
+      "start_s": 1.44,
+      "end_s": 1.82,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "first",
+        ""
+      ]
+    },
+    {
+      "index": 5,
+      "start_s": 1.82,
+      "end_s": 2.06,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "",
+        "local"
+      ]
+    },
+    {
+      "index": 6,
+      "start_s": 2.06,
+      "end_s": 2.52,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "",
+        "voice"
+      ]
+    },
+    {
+      "index": 7,
+      "start_s": 2.52,
+      "end_s": 2.86,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "",
+        "cloning"
+      ]
+    },
+    {
+      "index": 8,
+      "start_s": 2.86,
+      "end_s": 3.64,
+      "text": "Hello, this is my first / local voice cloning test.",
+      "highlight": [
+        "",
+        "test."
+      ]
+    },
+    {
+      "index": 9,
+      "start_s": 4.34,
+      "end_s": 4.69,
+      "text": "Welcome to Prudential Health India!",
+      "highlight": [
+        "Welcome"
+      ]
+    },
+    {
+      "index": 10,
+      "start_s": 4.69,
+      "end_s": 4.93,
+      "text": "Welcome to Prudential Health India!",
+      "highlight": [
+        "to"
+      ]
+    },
+    {
+      "index": 11,
+      "start_s": 4.93,
+      "end_s": 5.33,
+      "text": "Welcome to Prudential Health India!",
+      "highlight": [
+        "Prudential"
+      ]
+    },
+    {
+      "index": 12,
+      "start_s": 5.33,
+      "end_s": 5.67,
+      "text": "Welcome to Prudential Health India!",
+      "highlight": [
+        "Health"
+      ]
+    },
+    {
+      "index": 13,
+      "start_s": 5.67,
+      "end_s": 6.45,
+      "text": "Welcome to Prudential Health India!",
+      "highlight": [
+        "India!"
+      ]
+    }
+  ],
+  "subtitle_rendering_note": "FFmpeg here lacks libass; events were rasterised by Pillow with Helvetica Neue at the ASS style's size/outline/shadow scaled to 720p. Timing is exact; glyph rendering approximates libass.",
+  "validation": {
+    "ok": true,
+    "checks": {
+      "exists_nonempty": true,
+      "one_video_one_audio_stream": true,
+      "resolution_1280x720": true,
+      "fps_25_constant": true,
+      "video_h264_yuv420p": true,
+      "audio_aac_24k_mono": true,
+      "frame_count": true,
+      "duration_within_one_frame": true,
+      "decoded_frames_match_expected": true,
+      "scenes_in_order": true,
+      "subtitles_visible_only_during_events": true,
+      "subtitle_timing_matches_ass": true,
+      "no_unexpected_black": true,
+      "audio_aligned_at_start": true,
+      "audio_correlation_ge_0.99": true,
+      "decoded_audio_duration_within_one_frame": true
+    },
+    "details": {
+      "durations": {
+        "source_wav_s": 6.759958,
+        "video_stream_s": 6.76,
+        "audio_stream_s": 6.759958,
+        "container_s": 6.76,
+        "frames": 169,
+        "video_vs_source_s": 4.2e-05,
+        "audio_vs_source_s": -0.0,
+        "within_one_frame": true
+      },
+      "frame_psnr_db": {
+        "frames_checked": 61,
+        "min": 44.89,
+        "threshold": 30.0
+      },
+      "scene_order_observed": [
+        "S01",
+        "S02"
+      ],
+      "cut_frames": [
+        100
+      ],
+      "subtitle_event_onsets": [
+        {
+          "event": 0,
+          "first_frame": 4,
+          "t_s": 0.16,
+          "event_start_s": 0.15,
+          "psnr_own": 46.87,
+          "psnr_previous": 23.72
+        },
+        {
+          "event": 1,
+          "first_frame": 20,
+          "t_s": 0.8,
+          "event_start_s": 0.79,
+          "psnr_own": 48.61,
+          "psnr_previous": 33.74
+        },
+        {
+          "event": 2,
+          "first_frame": 27,
+          "t_s": 1.08,
+          "event_start_s": 1.08,
+          "psnr_own": 51.13,
+          "psnr_previous": 36.05
+        },
+        {
+          "event": 3,
+          "first_frame": 31,
+          "t_s": 1.24,
+          "event_start_s": 1.22,
+          "psnr_own": 49.6,
+          "psnr_previous": 37.29
+        },
+        {
+          "event": 4,
+          "first_frame": 36,
+          "t_s": 1.44,
+          "event_start_s": 1.44,
+          "psnr_own": 48.23,
+          "psnr_previous": 35.44
+        },
+        {
+          "event": 5,
+          "first_frame": 46,
+          "t_s": 1.84,
+          "event_start_s": 1.82,
+          "psnr_own": 47.99,
+          "psnr_previous": 34.23
+        },
+        {
+          "event": 6,
+          "first_frame": 52,
+          "t_s": 2.08,
+          "event_start_s": 2.06,
+          "psnr_own": 47.99,
+          "psnr_previous": 33.74
+        },
+        {
+          "event": 7,
+          "first_frame": 63,
+          "t_s": 2.52,
+          "event_start_s": 2.52,
+          "psnr_own": 46.46,
+          "psnr_previous": 32.84
+        },
+        {
+          "event": 8,
+          "first_frame": 72,
+          "t_s": 2.88,
+          "event_start_s": 2.86,
+          "psnr_own": 48.02,
+          "psnr_previous": 32.87
+        },
+        {
+          "event": 9,
+          "first_frame": 109,
+          "t_s": 4.36,
+          "event_start_s": 4.34,
+          "psnr_own": 45.66,
+          "psnr_previous": 25.79
+        },
+        {
+          "event": 10,
+          "first_frame": 118,
+          "t_s": 4.72,
+          "event_start_s": 4.69,
+          "psnr_own": 51.3,
+          "psnr_previous": 32.64
+        },
+        {
+          "event": 11,
+          "first_frame": 124,
+          "t_s": 4.96,
+          "event_start_s": 4.93,
+          "psnr_own": 45.07,
+          "psnr_previous": 33.04
+        },
+        {
+          "event": 12,
+          "first_frame": 134,
+          "t_s": 5.36,
+          "event_start_s": 5.33,
+          "psnr_own": 46.14,
+          "psnr_previous": 31.12
+        },
+        {
+          "event": 13,
+          "first_frame": 142,
+          "t_s": 5.68,
+          "event_start_s": 5.67,
+          "psnr_own": 47.11,
+          "psnr_previous": 32.57
+        }
+      ],
+      "black_intervals": [
+        [
+          0.0,
+          0.04
+        ]
+      ],
+      "audio": {
+        "source_samples": 162239,
+        "decoded_samples": 162239,
+        "sample_rate": 24000,
+        "source_duration_s": 6.759958,
+        "decoded_duration_s": 6.759958,
+        "best_lag_samples": 0,
+        "best_lag_ms": 0.0,
+        "correlation": 0.999913,
+        "snr_db": 37.55,
+        "max_abs_error": 0.045469,
+        "rms_error_dbfs": -55.94,
+        "first_sample_above_-40dBFS": {
+          "source": 3627,
+          "decoded": 3627
+        },
+        "bit_identical": false,
+        "stream_start_time_s": 0.0,
+        "codec_note": "AAC-LC at 128 kb/s is lossy: decoded samples differ from speech.wav. speech.wav itself was not modified; it is the only audio source and was not resampled, filtered or normalised.",
+        "sample_count_difference": 0
+      }
+    },
+    "frame_psnr_by_index": {
+      "0": 99.0,
+      "3": 61.7,
+      "4": 46.87,
+      "6": 44.89,
+      "11": 47.43,
+      "19": 47.46,
+      "20": 48.61,
+      "23": 48.62,
+      "26": 48.63,
+      "27": 51.13,
+      "28": 51.13,
+      "30": 51.13,
+      "31": 49.6,
+      "33": 49.6,
+      "35": 49.6,
+      "36": 48.23,
+      "40": 48.23,
+      "45": 48.23,
+      "46": 47.99,
+      "47": 47.99,
+      "48": 47.99,
+      "51": 47.99,
+      "52": 47.99,
+      "57": 47.99,
+      "62": 47.99,
+      "63": 46.46,
+      "67": 46.46,
+      "71": 46.46,
+      "72": 48.02,
+      "81": 48.03,
+      "90": 48.03,
+      "94": 57.88,
+      "95": 57.51,
+      "96": 54.82,
+      "97": 53.6,
+      "98": 55.46,
+      "99": 54.65,
+      "100": 48.03,
+      "101": 55.98,
+      "102": 57.1,
+      "103": 58.54,
+      "104": 57.86,
+      "105": 57.19,
+      "106": 57.19,
+      "109": 45.66,
+      "113": 45.68,
+      "117": 45.68,
+      "118": 51.3,
+      "120": 51.3,
+      "123": 51.3,
+      "124": 45.07,
+      "128": 45.07,
+      "133": 45.07,
+      "134": 46.14,
+      "137": 46.14,
+      "141": 46.14,
+      "142": 47.11,
+      "151": 47.11,
+      "161": 47.11,
+      "165": 58.41,
+      "168": 67.65
+    }
+  },
+  "render_seconds": 2.0,
+  "not_used": "no AI models, no cloud APIs, no stock/brand assets, no lip-sync, no audio processing"
+}

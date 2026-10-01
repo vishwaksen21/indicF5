@@ -1,0 +1,9 @@
+1
+00:00:00,150 --> 00:00:03,640
+Hello, this is my first
+local voice cloning test.
+
+2
+00:00:04,340 --> 00:00:06,450
+Welcome to Prudential Health India!
+

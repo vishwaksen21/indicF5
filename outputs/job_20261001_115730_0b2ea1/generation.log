@@ -1,0 +1,19 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/6c/kjxqd4jn0nx0d1cy5q6s_m2h0000gp/T/jieba.cache
+Loading model cost 0.247 seconds.
+Prefix dict has been built successfully.
+2026-10-01 11:57:35,362 INFO reference: my_voice_trimmed.wav (13.31 s, 24000 Hz, 1 ch)
+2026-10-01 11:57:35,365 INFO Note: 3.04 GB memory available; closing other apps will help.
+2026-10-01 11:57:39,153 INFO [direct] model loaded on mps in 3.79 s (364 model tensors, 83 vocoder tensors from checkpoint)
+2026-10-01 11:57:39,196 INFO 2 chunk(s), limit 416 bytes
+2026-10-01 11:58:13,644 INFO chunk 1/2: 4.85 s audio in 34.44 s
+2026-10-01 11:58:48,693 INFO chunk 2/2: 5.13 s audio in 35.05 s
+Word segmentation module jieba initialized.
+
+Load vocos from local path /Users/cvishwaksena/.cache/huggingface/hub/models--charactr--vocos-mel-24khz/snapshots/0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21
+
+vocab :  /Users/cvishwaksena/.cache/huggingface/hub/models--ai4bharat--IndicF5/snapshots/ba85abedf18dc479a447eaa0eccbd76ab78a47d5/checkpoints/vocab.txt
+token :  custom
+/Users/cvishwaksena/Desktop/indicf5-voice-test/.venv/lib/python3.12/site-packages/torchaudio/_backend/utils.py:213: UserWarning: In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec` under the hood. Some parameters like ``normalize``, ``format``, ``buffer_size``, and ``backend`` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead: https://docs.pytorch.org/torchcodec/stable/generated/torchcodec.decoders.AudioDecoder.html#torchcodec.decoders.AudioDecoder.
+  warnings.warn(
+2026-10-01 11:58:48,744 INFO success: /Users/cvishwaksena/Desktop/indicf5-voice-test/outputs/job_20261001_115730_0b2ea1/speech.wav (10.43 s)

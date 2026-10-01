@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "job_id": "job_20261001_103028_eb8ca2",
+  "created_at": "2026-10-01T10:45:19+05:30",
+  "planner": "scene_planner.py (deterministic rules; no models, no network)",
+  "inputs": {
+    "audio": "speech.wav",
+    "words": "alignment/words.json",
+    "alignment_report": "alignment/alignment_report.json",
+    "brief": "texts/briefs/sample_brief.json",
+    "brand_profile": "texts/briefs/prudential_brand_profile.json",
+    "alignment_engine": "whisper-cross-attention-dtw (openai/whisper-base.en, transformers)",
+    "timing_precision_note": "Timing resolution 20 ms (Whisper encoder frames), edges snapped on 10 ms energy frames. Accuracy vs ground truth not measured; *_ms values are formatting, not ms precision."
+  },
+  "audio_duration_s": 6.76,
+  "target_duration_s": 8.0,
+  "duration_note": "audio is 6.76 s vs target 8.0 s (-1.24 s); audio is not stretched. Any intro/outro padding is an editorial decision.",
+  "planning_config": {
+    "min_scene_s": 1.5,
+    "max_scene_s": 8.0,
+    "dissolve_min_pause_s": 0.6,
+    "min_coverage_percent": 95.0,
+    "max_uncertain_fraction": 0.2
+  },
+  "alignment_quality": {
+    "coverage_percent": 100.0,
+    "uncertain_or_unaligned": []
+  },
+  "brand": {
+    "brand_name": "Prudential Health India",
+    "logo_asset_path": "REQUIRES_USER_INPUT",
+    "brand_colors": "REQUIRES_USER_INPUT",
+    "typography": "REQUIRES_USER_INPUT",
+    "tone": "REQUIRES_USER_INPUT",
+    "visual_restrictions": "REQUIRES_USER_INPUT",
+    "required_disclaimers": "REQUIRES_USER_INPUT",
+    "prohibited_visual_elements": "REQUIRES_USER_INPUT"
+  },
+  "missing_inputs": [
+    "logo_asset_path",
+    "brand_colors",
+    "typography",
+    "tone",
+    "visual_restrictions",
+    "required_disclaimers",
+    "prohibited_visual_elements",
+    "presenter.consent_confirmed"
+  ],
+  "timeline_note": "start_s/end_s partition the audio contiguously, cutting at the midpoint of the pause between scenes; narration_start_s/narration_end_s are the exact first/last word times.",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "narration_text": "Hello, this is my first local voice cloning test.",
+      "first_word_index": 0,
+      "last_word_index": 8,
+      "word_count": 9,
+      "narration_start_s": 0.15,
+      "narration_end_s": 3.64,
+      "uncertain_words": [],
+      "start_s": 0.0,
+      "end_s": 3.99,
+      "duration_s": 3.99,
+      "start_ms": 0,
+      "end_ms": 3990,
+      "pause_before_s": 0.15,
+      "pause_after_s": 0.7,
+      "visual_mode": "talking_head",
+      "visual_description": "Presenter (the narrator (owner of the reference voice), seated, facing camera) speaking directly to camera",
+      "visual_description_source": "rule: greeting with available presenter",
+      "shot_type": "medium close-up, eye level",
+      "camera_movement": "static",
+      "speaker_required": true,
+      "direction_notes": [],
+      "transition_in": "fade in from black",
+      "transition": "cross-dissolve 0.35 s centred in the 0.70 s pause",
+      "asset_requirements": [
+        {
+          "type": "presenter_video",
+          "description": "the narrator (owner of the reference voice), seated, facing camera framed medium close-up, eye level, >= 3.99 s, neutral mouth for lip-sync",
+          "status": "REQUIRES_USER_INPUT",
+          "note": "confirm consent/likeness rights for the presenter"
+        },
+        {
+          "type": "lip_sync_audio",
+          "description": "speech.wav 0.000-3.990 s",
+          "status": "available"
+        },
+        {
+          "type": "brand_colors",
+          "value": "REQUIRES_USER_INPUT",
+          "status": "REQUIRES_USER_INPUT"
+        }
+      ],
+      "brand_constraints": {
+        "brand_name": "Prudential Health India",
+        "colors": "REQUIRES_USER_INPUT",
+        "typography": "REQUIRES_USER_INPUT",
+        "tone": "REQUIRES_USER_INPUT",
+        "visual_restrictions": "REQUIRES_USER_INPUT",
+        "prohibited_visual_elements": "REQUIRES_USER_INPUT",
+        "required_disclaimers": "REQUIRES_USER_INPUT"
+      },
+      "generation_prompt": "Presenter (the narrator (owner of the reference voice), seated, facing camera) speaking directly to camera. Shot: medium close-up, eye level; camera: static. Style: clean, bright, modern corporate; natural light; uncluttered backgrounds. Aspect ratio 16:9, duration 3.99 s. No on-screen text, captions or logos. Mouth clearly visible, minimal head motion (lip-sync applied later).",
+      "validation_status": "needs_review",
+      "validation_notes": [
+        "missing input: presenter_video",
+        "missing input: brand_colors"
+      ]
+    },
+    {
+      "scene_id": "S02",
+      "narration_text": "Welcome to Prudential Health India!",
+      "first_word_index": 9,
+      "last_word_index": 13,
+      "word_count": 5,
+      "narration_start_s": 4.34,
+      "narration_end_s": 6.45,
+      "uncertain_words": [],
+      "start_s": 3.99,
+      "end_s": 6.76,
+      "duration_s": 2.77,
+      "start_ms": 3990,
+      "end_ms": 6760,
+      "pause_before_s": 0.7,
+      "pause_after_s": 0.31,
+      "visual_mode": "text_graphic",
+      "visual_description": "Brand card: Prudential Health India name and logo on a clean background",
+      "visual_description_source": "rule: brand-name card",
+      "shot_type": "full-frame graphic",
+      "camera_movement": "static",
+      "speaker_required": false,
+      "direction_notes": [],
+      "transition": "fade out to black (after narration ends)",
+      "asset_requirements": [
+        {
+          "type": "logo",
+          "path": null,
+          "status": "REQUIRES_USER_INPUT"
+        },
+        {
+          "type": "typography",
+          "value": "REQUIRES_USER_INPUT",
+          "status": "REQUIRES_USER_INPUT"
+        },
+        {
+          "type": "brand_colors",
+          "value": "REQUIRES_USER_INPUT",
+          "status": "REQUIRES_USER_INPUT"
+        }
+      ],
+      "brand_constraints": {
+        "brand_name": "Prudential Health India",
+        "colors": "REQUIRES_USER_INPUT",
+        "typography": "REQUIRES_USER_INPUT",
+        "tone": "REQUIRES_USER_INPUT",
+        "visual_restrictions": "REQUIRES_USER_INPUT",
+        "prohibited_visual_elements": "REQUIRES_USER_INPUT",
+        "required_disclaimers": "REQUIRES_USER_INPUT"
+      },
+      "generation_prompt": "Brand card: Prudential Health India name and logo on a clean background. Shot: full-frame graphic; camera: static. Style: clean, bright, modern corporate; natural light; uncluttered backgrounds. Aspect ratio 16:9, duration 2.77 s.",
+      "validation_status": "needs_review",
+      "validation_notes": [
+        "missing input: logo",
+        "missing input: typography",
+        "missing input: brand_colors"
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "checks": {
+      "timestamps_valid": true,
+      "within_audio_duration": true,
+      "covers_full_audio": true,
+      "contiguous_no_overlap": true,
+      "chronological": true,
+      "durations_consistent": true,
+      "all_words_assigned": true,
+      "no_word_in_multiple_scenes": true,
+      "no_missing_word_indices": true,
+      "narration_text_matches_words": true,
+      "valid_visual_modes": true,
+      "markdown_matches_json": true
+    },
+    "uncertain_words_surfaced": 0,
+    "scenes_needing_review": [
+      "S01",
+      "S02"
+    ]
+  }
+}

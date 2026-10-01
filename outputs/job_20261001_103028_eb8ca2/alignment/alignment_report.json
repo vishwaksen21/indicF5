@@ -1,0 +1,61 @@
+{
+  "job_id": "job_20261001_103028_eb8ca2",
+  "created_at": "2026-10-01T10:40:05+05:30",
+  "alignment_engine": "whisper-cross-attention-dtw (openai/whisper-base.en, transformers)",
+  "device": "cpu",
+  "downloads": "none (offline mode enforced)",
+  "segmentation": "phase1_chunk_spans",
+  "audio_checks": {
+    "readable": true,
+    "finite": true,
+    "non_empty": true,
+    "mono": true,
+    "duration_s": 6.76,
+    "metadata_duration_s": 6.76,
+    "duration_matches_metadata": true
+  },
+  "counts": {
+    "transcript_words": 14,
+    "aligned": 14,
+    "uncertain": 0,
+    "unaligned": 0
+  },
+  "coverage_percent": 100.0,
+  "uncertain_or_unaligned": [],
+  "validation": {
+    "word_sequence_matches_transcript": true,
+    "within_audio_bounds": true,
+    "start_before_end": true,
+    "no_negative_times": true,
+    "chronological_starts": true,
+    "unaligned_words_have_no_times": true,
+    "srt": {
+      "cues": 2,
+      "malformed_or_out_of_order": [],
+      "ok": true
+    }
+  },
+  "validation_ok": true,
+  "overlaps": [],
+  "gaps_ge_150ms": [
+    {
+      "after": "test.",
+      "before": "Welcome",
+      "gap_s": 0.7
+    }
+  ],
+  "sentence_span_vs_phase1_chunk": [
+    {
+      "sentence_index": 0,
+      "first_word_start_minus_chunk_start_s": 0.0,
+      "last_word_end_minus_chunk_end_s": 0.0
+    },
+    {
+      "sentence_index": 1,
+      "first_word_start_minus_chunk_start_s": 0.0,
+      "last_word_end_minus_chunk_end_s": -0.01
+    }
+  ],
+  "precision_note": "Timing resolution 20 ms (Whisper encoder frames), edges snapped on 10 ms energy frames. Accuracy vs ground truth not measured; *_ms values are formatting, not ms precision.",
+  "runtime_seconds": 3.38
+}

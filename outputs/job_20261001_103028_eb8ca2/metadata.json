@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "job_id": "job_20261001_103028_eb8ca2",
+  "status": "success",
+  "created_at": "2026-10-01T10:30:28+05:30",
+  "input": {
+    "file": "input.txt",
+    "text": "हेलो, दिस इज़ माय फ़र्स्ट लोकल वॉइस क्लोनिंग टेस्ट।\n\nवेलकम टू प्रूडेंशियल हेल्थ इंडिया!\n",
+    "display_text": "Hello, this is my first local voice cloning test.\n\nWelcome to Prudential Health India!",
+    "alignment_text_source": "display_text",
+    "unknown_tokens": []
+  },
+  "reference": {
+    "audio_file": "my_voice_trimmed.wav",
+    "audio_path": "/Users/cvishwaksena/Desktop/indicf5-voice-test/reference/my_voice_trimmed.wav",
+    "transcript_file": "my_voice_trimmed_devanagari.txt",
+    "audio_sha256": "5398e34ba105e1f90342a49980cc1597e4642e484f6223f3deffa5368f39d69d",
+    "transcript_sha256": "7fcc0d36ebdeaaeb91ad91b5b86feb495d5896b0d0895d8a02c9e2a5e9959da5",
+    "seconds_used": 13.26
+  },
+  "output": {
+    "file": "speech.wav",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_s": 6.76,
+    "subtype": "PCM_16",
+    "bytes": 324522,
+    "true_peak_dbtp": -1.05
+  },
+  "model": {
+    "id": "ai4bharat/IndicF5",
+    "revision": "ba85abedf18dc479a447eaa0eccbd76ab78a47d5",
+    "vocoder": "charactr/vocos-mel-24khz",
+    "backend": "direct",
+    "device": "mps"
+  },
+  "settings": {
+    "seed": 42,
+    "nfe_step": 32,
+    "cfg_strength": 2.0,
+    "speed": 1.0,
+    "sway_sampling_coef": -1.0,
+    "sentence_pause_s": 0.45,
+    "paragraph_pause_s": 0.7,
+    "clause_pause_s": 0.2,
+    "peak_ceiling_dbtp": -1.0,
+    "strict_vocab": false
+  },
+  "environment": {
+    "python": "3.12.14",
+    "machine": "arm64",
+    "macos": "26.6.2"
+  },
+  "validation": {
+    "ok": true,
+    "checks": {
+      "readable": true,
+      "non_empty": true,
+      "duration_positive": true,
+      "sample_rate_24k": true,
+      "mono": true,
+      "pcm16": true,
+      "finite_values": true,
+      "not_silent": true,
+      "has_speech_frames": true,
+      "no_clipping": true,
+      "alignment_ready": true
+    },
+    "measurements": {
+      "duration_s": 6.76,
+      "sample_rate": 24000,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "frames": 162239,
+      "rms_dbfs": -18.39,
+      "peak_dbfs": -1.05,
+      "voiced_fraction": 0.774
+    }
+  },
+  "post_processing": {
+    "chunk_join": "independent sentence chunks, no cross-fade, explicit pauses",
+    "trim_margins_s": [
+      0.05,
+      0.15
+    ],
+    "static_gain_db": -2.63,
+    "limiter": false,
+    "compression": false,
+    "denoise": false
+  },
+  "chunks": [
+    {
+      "index": 1,
+      "text": "हेलो, दिस इज़ माय फ़र्स्ट लोकल वॉइस क्लोनिंग टेस्ट।",
+      "start_s": 0.15,
+      "end_s": 3.64,
+      "pause_after_s": 0.7,
+      "generation_seconds": 32.7,
+      "model_audio_ended_abruptly": false
+    },
+    {
+      "index": 2,
+      "text": "वेलकम टू प्रूडेंशियल हेल्थ इंडिया!",
+      "start_s": 4.34,
+      "end_s": 6.46,
+      "pause_after_s": 0.0,
+      "generation_seconds": 30.02,
+      "model_audio_ended_abruptly": true
+    }
+  ],
+  "chunks_note": "start_s/end_s are exact chunk placements from assembly (speech span incl. no margins). They are NOT word-level timestamps; Phase 2 must align words itself.",
+  "timings": {
+    "model_load_seconds": 3.05,
+    "model_loaded_in_this_job": true,
+    "generation_seconds": 62.73,
+    "job_total_seconds": 70.04
+  },
+  "memory": {
+    "peak_process_rss_gb": 0.86,
+    "peak_mps_driver_gb": 2.3,
+    "min_system_available_gb": 1.89,
+    "lifetime_max_rss_gb": 3.13
+  }
+}

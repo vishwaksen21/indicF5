@@ -1,0 +1,89 @@
+{
+  "job_id": "job_20261001_103028_eb8ca2",
+  "created_at": "2026-10-01T11:07:10+05:30",
+  "generator": "subtitles.py (Phase 4B-0)",
+  "timing_source": "/Users/cvishwaksena/Desktop/indicf5-voice-test/outputs/job_20261001_103028_eb8ca2/alignment/words.json",
+  "alignment_engine": "whisper-cross-attention-dtw (openai/whisper-base.en, transformers)",
+  "audio_duration_s": 6.76,
+  "aspect_ratio": "16:9",
+  "aspect_source": "/Users/cvishwaksena/Desktop/indicf5-voice-test/texts/briefs/sample_brief.json",
+  "play_resolution": [
+    1920,
+    1080
+  ],
+  "style": {
+    "font": "Helvetica Neue",
+    "primary": "&H00FFFFFF",
+    "highlight": "&H0000FFFF",
+    "outline_colour": "&H00000000",
+    "back_colour": "&H80000000",
+    "outline": 3,
+    "shadow": 1,
+    "note": "neutral placeholder; brand typography/colours are REQUIRES_USER_INPUT"
+  },
+  "placement": {
+    "alignment": "bottom-centre",
+    "margin_v_px": 86,
+    "margin_lr_px": 192,
+    "max_chars_per_line": 42,
+    "max_lines": 2
+  },
+  "cues": [
+    {
+      "cue": 1,
+      "start_s": 0.15,
+      "end_s": 3.64,
+      "first_word_index": 0,
+      "last_word_index": 8,
+      "text": "Hello, this is my first local voice cloning test.",
+      "highlighted": true,
+      "not_highlighted_because": null
+    },
+    {
+      "cue": 2,
+      "start_s": 4.34,
+      "end_s": 6.45,
+      "first_word_index": 9,
+      "last_word_index": 13,
+      "text": "Welcome to Prudential Health India!",
+      "highlighted": true,
+      "not_highlighted_because": null
+    }
+  ],
+  "word_coverage": {
+    "words": 14,
+    "in_cues": 14,
+    "every_word_exactly_once": true,
+    "text_matches_transcript": true,
+    "highlight_events": 14,
+    "expected_highlight_events": 14
+  },
+  "uncertain_or_unaligned_words": [],
+  "precision_note": "Timing resolution 20 ms (Whisper encoder frames), edges snapped on 10 ms energy frames. Accuracy vs ground truth not measured; *_ms values are formatting, not ms precision. SRT is written in ms, ASS in centiseconds (10 ms); neither is a precision claim.",
+  "validation": {
+    "ok": true,
+    "checks": {
+      "cues_chronological": true,
+      "cues_within_audio": true,
+      "every_word_in_exactly_one_cue": true,
+      "cue_text_matches_transcript": true,
+      "highlight_events_match_aligned_words": true,
+      "srt_valid": true,
+      "ass_valid": true
+    },
+    "srt": {
+      "cues": 2,
+      "malformed_or_out_of_order": [],
+      "ok": true
+    },
+    "ass": {
+      "events": 14,
+      "expected_events": 14,
+      "malformed": [],
+      "chronological": true,
+      "within_duration_and_positive": true,
+      "ok": true
+    }
+  },
+  "status": "ok"
+}

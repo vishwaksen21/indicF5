@@ -1,0 +1,9 @@
+{
+  "source": "/Users/cvishwaksena/Desktop/indicf5-voice-test/linkedin-video.wav",
+  "source_sha256": "dc9a930f06534a9acf8d3dd3d202bbc010b7073aba53dc3dc510cbe92cd7e777",
+  "source_format": "2 ch, 44100 Hz, PCM_16",
+  "start_s": 0.25,
+  "end_s": 13.56,
+  "duration_s": 13.31,
+  "processing": "mean downmix, soxr VHQ -> 24000 Hz, 10.0 ms fades, PCM_16"
+}
